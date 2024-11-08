@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT-школа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Добавлен мета-тег -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+    <div class="container">
+        <h1>Добро пожаловать в IT-школу by firdBro!</h1>
+        <nav>
+            <div class="menu-icons">
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+                <div class="close" onclick="toggleMenu()">&times;</div>
+            </div>
+            <ul class="menu">
+                <li><a href="#datascience">Scratch</a></li>
+                <li><a href="#cybersecurity">Roblox</a></li>
+                <li><a href="#ai">Python</a></li>
+                <li><a href="#webdev">Веб-разработка</a></li>
+                <li><a href="#mobiledev">Мобильная разработка</a></li>
+                <li><a href="#courses">Все курсы</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a class="cta" href="#contact">Записаться!</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <section class="hero">
+        <div class="container">
+            <h2>Начни своё обучение сегодня!</h2>
+            <p>Мы предлагаем лучшие курсы для твоего профессионального роста.</p>
+            <button onclick="scrollToCourses()">Посмотреть курсы</button>
+        </div>
+    </section>
+    <div class="gallery">
+        <img src="PHOTO/front1.jpg" alt="Image 1">
+        <img src="PHOTO/front2.jpg" alt="Image 2">
+        <img src="PHOTO/front3.jpg" alt="Image 3">
+    </div>
+    <div class="container" id="courses">
+        <h2>Наши курсы</h2>
+        <div class="course" id="webdev" onclick="toggleDescription('desc1')">
+            <h3>Веб-разработка</h3>
+            <p>Изучите основы HTML, CSS и JavaScript, а также современные фреймворки и библиотеки.</p>
+            <div class="description" id="desc1">
+                <p>Этот курс подходит для тех, кто хочет стать Front-end или Full-stack разработчиком. Вы освоите основы веб-технологий и сможете создавать современные веб-приложения.</p>
+                <p>Профессии: Веб-разработчик, Front-end разработчик, Full-stack разработчик.</p>
+                <li class="menu"><a class="cta" href="#contact">Записаться!</a></li>
+            </div>
+        </div>
+        <div class="course" id="mobiledev" onclick="toggleDescription('desc2')">
+            <h3>Мобильная разработка</h3>
+            <p>Создавайте приложения для Android и iOS с использованием популярных инструментов и языков программирования.</p>
+            <div class="description" id="desc2">
+                <p>Этот курс поможет вам стать профессионалом в разработке мобильных приложений. Вы научитесь создавать приложения для Android и iOS с использованием Java, Kotlin и Swift.</p>
+                <p>Профессии: Мобильный разработчик, Android-разработчик, iOS-разработчик.</p>
+                <li><a class="cta" href="#contact">Записаться!</a></li>
+            </div>
+        </div>
+        <div class="course" id="datascience" onclick="toggleDescription('desc3')">
+            <h3>Scratch</h3>
+            <p>Scratch — это мощный визуальный язык программирования, разработанный MIT Media Lab для детей и начинающих программистов.</p>
+            <div class="description" id="desc3">
+                <p>Интуитивный интерфейс: Scratch использует блоки кода, которые легко соединяются, как пазлы, что помогает понять логику программирования.
+
+Творческое выражение: Платформа позволяет детям воплощать свои идеи в жизнь, создавая уникальные проекты.
+
+Поддержка сообщества: Scratch предоставляет онлайн-платформу, где пользователи могут делиться своими проектами, вдохновляться работами других и получать обратную связь.
+
+Обучение через игры: Scratch делает процесс обучения программированию веселым и интересным, что мотивирует детей продолжать учиться и развиваться.</p>
+                <li><a class="cta" href="#contact">Записаться!</a></li>
+            </div>
+        </div>
+        <div class="course" id="cybersecurity" onclick="toggleDescription('desc4')">
+            <h3>Roblox</h3>
+            <p>Это отличный инструмент для обучения в IT-школах, так как он объединяет развлечение и образование.</p>
+            <div class="description" id="desc4">
+                <p>Roblox — это платформа для создания и игры в многопользовательские онлайн-игры с использованием блочного дизайна. Она позволяет пользователям создавать, играть и делиться своими играми, а также учиться основам программирования и дизайна игр</p>
+                <li><a class="cta" href="#contact">Записаться!</a></li>
+            </div>
+        </div>
+        <div class="course" id="ai" onclick="toggleDescription('desc5')">
+            <h3>Python</h3>
+            <p>Изучите основы Python..</p>
+            <div class="description" id="desc5">
+                <p>
+Python — это популярный язык программирования, известный своей простотой и читаемостью. Он широко используется для веб-разработки, анализа данных, автоматизации и создания приложений. Python подходит для обучения программированию благодаря его интуитивно понятному синтаксису и большому сообществу поддержки.</p>
+                <p>Профессии: Разработчик программного обеспечения, веб-разработчик, аналитик данных, инженер по данным, специалист по машинному обучению, аналитик данных, автоматизатор тестирования, разработчик игр, инженер по кибербезопасности, специалист по скриптам.</p>
+                <li><a class="cta" href="#contact">Записаться!</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2>О нас</h2>
+        <p>Мы предлагаем высококачественные курсы, чтобы помочь вам стать профессионалом в мире IT. Наши преподаватели – опытные эксперты, готовые поделиться своими знаниями.</p>
+    </div>
+    <div class="container" id="contact">
+    <h2>Контакты</h2>
+    <form action="submit_form.php" method="post">
+        <label for="fname">Имя:</label><br>
+        <input type="text" id="fname" name="firstname" required><br>
+        <label for="lname">Фамилия:</label><br>
+        <input type="text" id="lname" name="lastname" required><br>
+        <label for="phone">Номер телефона:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="region">Регион:</label><br>
+        <select id="region" name="region" required>
+            <option value="Россия">Россия</option>
+            <option value="Украина">Украина</option>
+            <option value="Беларусь">Беларусь</option>
+            <option value="Казахстан">Казахстан</option>
+            <option value="Армения">Армения</option>
+            <option value="Азербайджан">Азербайджан</option>
+            <option value="Грузия">Грузия</option>
+            <option value="Молдова">Молдова</option>
+            <option value="Таджикистан">Таджикистан</option>
+            <option value="Туркменистан">Туркменистан</option>
+            <option value="Узбекистан">Узбекистан</option>
+            <option value="Кыргызстан">Кыргызстан</option>
+        </select><br>
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h3>Связаться с нами</h3>
+                <p>Email: info@itschool.ru</p>
+                <p>Телефон: +7 (123) 456-78-90</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Наши социальные сети</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 IT-школа. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+    
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        const hamburger = document.querySelector('.hamburger');
+        const close = document.querySelector('.close');
+        
+        if (menu.classList.contains('active')) {
+            menu.style.animation = 'slideUp 0.3s ease-out';
+            setTimeout(() => {
+                menu.classList.remove('active');
+                hamburger.style.display = 'block';
+                close.style.display = 'none';
+            }, 300);
+        } else {
+            menu.style.animation = 'slideDown 0.3s ease-out';
+            menu.classList.add('active');
+            hamburger.style.display = 'none';
+            close.style.display = 'block';
+        }
+    }
+
+    // Автоматическое закрытие меню после нажатия на ссылку
+    document.querySelectorAll('.menu li a').forEach(item => {
+        item.addEventListener('click', () => {
+            const menu = document.querySelector('.menu');
+            const hamburger = document.querySelector('.hamburger');
+            const close = document.querySelector('.close');
+
+            menu.style.animation = 'slideUp 0.3s ease-out';
+            setTimeout(() => {
+                menu.classList.remove('active');
+                hamburger.style.display = 'block';
+                close.style.display = 'none';
+            }, 300);
+        });
+    });
+</script>
+
+
+
+
+
+    <script>
+        function scrollToCourses() {
+            document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "block") {
+                desc.style.display = "none";
+            } else {
+                desc.style.display = "block";
+            }
+        }
+        function setBackgroundImages() {
+    const input = document.getElementById('backgroundImageInput');
+    const files = input.files;
+
+    if (files.length === 0) {
+      return; // Ничего не делать, если файлов не выбрано
+    }
+
+    let backgroundImages = "";
+    for (const file of files) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        backgroundImages += `url(${e.target.result})`;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // После прочтения всех файлов, установить фоны
+    document.body.style.backgroundImage = backgroundImages;
+    // Дополнительные стили для галереи изображений (по желанию)
+  }
+
+    </script>
+</body>
+</html>
